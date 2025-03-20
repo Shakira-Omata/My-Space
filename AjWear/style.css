@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #8caa91;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #4a525f 3px solid;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    height: 100px; 
+    width: auto;
+}
+
+header h1 {
+    float: left;
+    color: #e96262;
+    font-weight: bolder;
+    font-size: 3em;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(90deg, #e96262, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+    padding: 6px 8px;
+}
+header nav ul li a:hover {
+    background: #7a2323;
+    color: #e6e9ee;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    background: #5d92ec63;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background: #7a2323;
+    color: #e6e9ee;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background: #5d92ec63;
+    text-align: center;
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* Products Section */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background: #eaedf3;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 20px;
+    color: #2c0b0b;
+}
+.add-to-cart {
+    background: #5d92ec63;
+    color: #141212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #7a2323;
+    color: #e6e9ee;
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #5d92ec63;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #0457e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact form button:hover {
+    background: #7a2323;
+    color: #e6e9ee;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .product-item {
+        width: 100%;
+    }
+}
