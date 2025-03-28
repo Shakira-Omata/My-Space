@@ -16,9 +16,10 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="cart-toggle">Cart (<span id="cart-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
@@ -125,5 +126,46 @@
             <p>&copy; 2025 AJ Pocket Wear. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Shopping Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button id="close-cart">&times;</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <div class="cart-total">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="checkout-name">Full Name</label>
+                <input type="text" id="checkout-name" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout-email">Email</label>
+                <input type="email" id="checkout-email" required>
+            </div>
+            <div class="form-group">
+                <label for="checkout-address">Shipping Address</label>
+                <textarea id="checkout-address" required></textarea>
+            </div>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <ul id="order-items"></ul>
+                <p class="order-total">Total: $<span id="order-total">0.00</span></p>
+            </div>
+            <button type="submit" class="submit-order">Place Order</button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
